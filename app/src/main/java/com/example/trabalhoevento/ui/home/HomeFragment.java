@@ -26,47 +26,11 @@ public class HomeFragment extends Fragment {
 
         gridView = binding.gridApresentacoes;
 
-        int[] list = new int[]{ R.drawable.postmalone, R.drawable.postmalone, R.drawable.postmalone,
-                R.drawable.postmalone,
-                R.drawable.postmalone,
-                R.drawable.postmalone,
+        int[] list = new int[]{ R.drawable.postmalone, R.drawable.brunomars,
+                R.drawable.imaginedragons, R.drawable.alok,
+                R.drawable.blackbear, R.drawable.lilnasx,
         };
         gridView.setAdapter(new Adaptador(getContext(), list));
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent,
-                                    View view, int position, long id) {
-                switch (position){
-                    case 0:
-                        System.out.println('0');
-                        break;
-                    case 1:
-                        System.out.println('1');
-                        break;
-                    case 2:
-                        System.out.println('2');
-                        break;
-                    case 3:
-                        System.out.println('3');
-                        break;
-                    case 4:
-                        System.out.println('4');
-                        break;
-                    case 5:
-                        System.out.println('5');
-                        break;
-                    case 6:
-                        System.out.println('6');
-                        break;
-                    case 7:
-                        System.out.println('7');
-                        break;
-                    case 8:
-                        System.out.println('7');
-                        break;
-                }
-            }
-        });
 
         return root;
     }

@@ -1,10 +1,12 @@
 package com.example.trabalhoevento.ui.dashboard;
 
 import android.database.DataSetObserver;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
@@ -24,6 +26,7 @@ public class DashboardFragment extends Fragment {
 
     private FragmentDashboardBinding binding;
     private ListView listView;
+    private MediaPlayer mediaPlayer;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,6 +36,42 @@ public class DashboardFragment extends Fragment {
 
         MyAdapter listAdapter = new MyAdapter();
         listView.setAdapter(listAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent,
+                                    View view, int position, long id) {
+                if (mediaPlayer != null) {
+                    mediaPlayer.release();
+                }
+                switch (position){
+                    case 0:
+                        mediaPlayer=MediaPlayer.create(getContext(), R.raw.postmalone);
+                        mediaPlayer.start();
+                        break;
+                    case 1:
+                        mediaPlayer=MediaPlayer.create(getContext(), R.raw.brunomars);
+                        mediaPlayer.start();
+                        break;
+                    case 2:
+                        mediaPlayer=MediaPlayer.create(getContext(), R.raw.imaginedragons);
+                        mediaPlayer.start();
+                        break;
+                    case 3:
+                        mediaPlayer=MediaPlayer.create(getContext(), R.raw.alok);
+                        mediaPlayer.start();
+                        break;
+                    case 4:
+                        mediaPlayer=MediaPlayer.create(getContext(), R.raw.blackbear);
+                        mediaPlayer.start();
+                        break;
+                    case 5:
+                        mediaPlayer=MediaPlayer.create(getContext(), R.raw.lilnasx);
+                        mediaPlayer.start();
+                        break;
+                }
+            }
+        });
+
         return contentView;
     }
 
@@ -43,7 +82,7 @@ public class DashboardFragment extends Fragment {
                 {
                         "Post Malone (20h)",
                         "Bruno Mars (21h)",
-                        "Demi Lovato (22h)",
+                        "Imagine Dragons (22h)",
                         "Alok (23h)",
                         "Blackbear (00h)",
                         "Lil Nas X (01h)",
