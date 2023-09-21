@@ -1,7 +1,22 @@
 <resources>
     <string name="app_name">TrabalhoEvento</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="about_text">O evento acontecerá em Campo Grande - MS, no parque Laucídio Coelho, ás 20H do horário local e irá até às 07H. Irá ocorrer as apresentações dos seguintes cantores nos seguintes horários:</string>
+    <string name="title_dashboard">Sobre</string>
+    <string name="title_notifications">Ingressos</string>
+    <string name="about_text">O evento acontecerá em Campo Grande - MS, no parque Laucídio Coelho, ás 20H do horário local e irá até às 02H. Irá ocorrer as apresentações dos seguintes cantores nos seguintes horários:</string>
+    <string name="presentation">Apresentações do Evento</string>
+    <string name="quantity_ticket">Quantidade de Ingressos:</string>
+    <string name="date">Data: 20/09/2023</string>
+    <string name="hour">Horário: 20:00</string>
+    <string name="place">Local: Parque Laucídio Coelho, Campo Grande - MS</string>
+    <string name="default_value">Valor: R$ 60.0</string>
+    <string name="buy">Comprar</string>
+
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

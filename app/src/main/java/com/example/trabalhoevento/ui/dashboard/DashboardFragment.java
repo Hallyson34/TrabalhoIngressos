@@ -80,12 +80,12 @@ public class DashboardFragment extends Fragment {
         // override other abstract methods here
         String[] shows = new String[]
                 {
-                        "Post Malone (20h)",
-                        "Bruno Mars (21h)",
-                        "Imagine Dragons (22h)",
-                        "Alok (23h)",
-                        "Blackbear (00h)",
-                        "Lil Nas X (01h)",
+                        "Post Malone (20h) - Clique para conhecer",
+                        "Bruno Mars (21h) - Clique para conhecer",
+                        "Imagine Dragons (22h) - Clique para conhecer",
+                        "Alok (23h) - Clique para conhecer",
+                        "Blackbear (00h) - Clique para conhecer",
+                        "Lil Nas X (01h) - Clique para conhecer",
                 };
 
         @Override
